@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IEEE MEMBERSHIP CALCULATOR</title>
+    <link rel="icon" href="calculator-logo.svg">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <img src="logo.svg" alt="Calculator Logo" class="logo">
+        <h1>IEEE MEMBERSHIP CALCULATOR</h1>
+        <div class="flex-container">
+            <div class="cart">
+                <h2>Cart</h2>
+                <div id="basketList"></div>
+                <p id="totalPrice">Total Price in USD: </p>
+                <p id="totalPriceEGP">Total Price in EGP: </p>
+                <button type="button" onclick="clearBasket()">Clear</button>
+            </div>
+            <div class="main">
+                <form id="subscriptionForm">
+
+                <div class="form-group">
+                        <label for="subscriptionDate">Subscription Date:</label>
+                        <input type="date" id="subscriptionDate">
+                    </div>
+                <div class="form-group">
+                        <label>IEEE MSB Package:</label>
+                        <button type="button" onclick="addMSBPackage()">Get One</button>
+                        <button type="button" onclick="window.location.href='ieee-msb-package.html'">Package Details</button>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="membershipType">Membership & Societies:</label>
+                        <select id="membershipType" multiple>
+                            <option value="student">IEEE Student Membership</option>
+                            <option value="sight">IEEE SIGHT Membership</option>
+                            <option value="wie">IEEE Women in Engineering Membership</option>
+                            <option value="computer">IEEE Computer Society Membership</option>
+                            <option value="robotics">IEEE Robotics and Automation Society Membership</option>
+                            <option value="power">IEEE Power & Energy Society Membership</option>
+                            <option value="education">IEEE Education Society Membership</option>
+                            <option value="biometrics">IEEE Biometrics Council</option>
+                            <option value="eda">IEEE Council on Electronic Design Automation</option>
+                            <option value="rfid">IEEE Council on RFID</option>
+                            <option value="superconductivity">IEEE Council on Superconductivity</option>
+                            <option value="nanotechnology">IEEE Nanotechnology Council</option>
+                            <option value="sensors">IEEE Sensors Council</option>
+                            <option value="systems">IEEE Systems Council</option>
+                            <option value="transportation">IEEE Transportation Electricity Council</option>
+                        </select>
+                    </div>
+
+<!--                    <button type="button" onclick="downloadBrochure()">Membership Benefits Brochure</button>-->
+                    <button type="button" onclick="addToBasket()">Add to Cart</button>
+                    <button type="button" onclick="calculateTotalPrice()">Calculate Cost</button>
+                    <button type="button" onclick="addFreeMemberships()">Free Memberships</button>
+                </form>
+            </div>
+        </div>
+        <button type="button" class="whatsapp-button" onclick="openWhatsAppChat()">Get Your Membership Now</button>
+    </div>
+
+    <footer>
+        <p>Follow The Blue</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/ieeemsb" target="_blank">
+                <img src="facebook-icon.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/ieeemsb" target="_blank">
+                <img src="instagram-icon.png" alt="Instagram">
+            </a>
+            <a href="https://www.linkedin.com/in/ieeemsb" target="_blank">
+                <img src="linkedin-icon.png" alt="LinkedIn">
+            </a>
+            <a href="https://www.twitter.com/ieee_msb" target="_blank">
+                <img src="twitter-icon.png" alt="Twitter">
+            </a>
+        </div>
+        <p>© Copyright 2024 IEEE Menofia University Student Branch - All rights reserved. Use of this Web site signifies your agreement to the <a href="https://www.ieee.org/about/help/site-terms-conditions.html" target="_blank">IEEE Terms and Conditions</a>.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

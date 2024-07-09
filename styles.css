@@ -1,0 +1,234 @@
+@font-face {
+    font-family: 'Formata';
+    src: url('path/to/Formata-Regular.woff2') format('woff2'),
+         url('path/to/Formata-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Formata', Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    overflow: auto;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+.logo {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+
+h1, h2 {
+    text-align: center;
+    font-weight: bold;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.cart, .main {
+    width: 100%;
+    max-width: 45%;
+    margin-bottom: 20px;
+}
+
+.cart {
+    border-right: 1px solid #ddd;
+    padding-right: 20px;
+}
+
+.cart ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.cart ul li {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart ul li button {
+    background: none;
+    border: none;
+    color: red;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    font-family: 'Formata', Arial, sans-serif;
+    font-weight: normal;
+}
+
+label {
+    display: block;
+    font-family: 'Formata', Arial, sans-serif;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: black;
+}
+
+select, input[type="date"], button {
+    width: 100%;
+    padding: 10px;
+    font-family: 'Formata', Arial, sans-serif;
+    box-sizing: border-box;
+    font-weight: bold;
+    color: black;
+}
+
+button {
+    background-color: #0073b1;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.whatsapp-button {
+    background-color: #78BE20;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-family: 'Formata', Arial, sans-serif;
+    margin-top: 20px;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.whatsapp-button:hover {
+    background-color: #128C7E;
+}
+
+button:hover {
+    background-color: #005f8a;
+}
+
+#results {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+}
+
+p {
+    margin: 5px 0;
+    font-weight: bold;
+    color: black;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+td img {
+    width: 100%;
+    max-width: 400px;
+}
+
+.remove-button {
+    background: none;
+    border: none;
+    color: red;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+footer {
+    background-image: url('Vector (2).svg');
+    background-size: cover;
+    background-position: bottom;
+    padding: 1%;
+    text-align: center;
+    width: 100%;
+}
+
+footer p {
+    margin: 10px 0;
+    color: whitesmoke;
+    font-weight: normal;
+}
+
+.social-icons {
+    margin: 10px 0;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+@media (max-width: 768px) {
+    .flex-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cart, .main {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .cart {
+        border-right: none;
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .form-group, select, input[type="date"], button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .whatsapp-button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
